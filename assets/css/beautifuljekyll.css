@@ -1147,9 +1147,9 @@ pre {
 }
 
 .personal-image img {
-  width: 35%;                /* Makes the image responsive */
-  max-width: 300px;          /* Sets a maximum width */
-  height: auto;              /* Preserve aspect ratio */
+  width: 40%;                /* Makes the image responsive */
+  max-width: 380px;          /* Sets a maximum width */
+  height: auto;              /* Preserve aspect ratio (no cropping) */
   margin: 20px 0;
 }
 
