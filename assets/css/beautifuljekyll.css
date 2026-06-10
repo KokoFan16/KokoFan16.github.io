@@ -1161,6 +1161,18 @@ pre {
   margin: 0;                 /* Spacing handled by the parent's gap */
 }
 
+.figure-text > :first-child {
+  margin-top: 0;             /* Align the first line of text with the top of the photo */
+}
+
+/* The content sits directly inside a Bootstrap .row whose negative margins
+   would otherwise push it flush against the window edges. Reset them so the
+   container's own padding gives the text some breathing room. */
+main .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* On small screens, stack the photo on top of the text and center it */
 @media (max-width: 767px) {
   .personal-image {
