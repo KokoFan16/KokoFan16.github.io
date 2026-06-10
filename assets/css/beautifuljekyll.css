@@ -1143,6 +1143,7 @@ pre {
   flex-wrap: wrap;            /* Allow the image and text to stack when space is tight */
   justify-content: flex-start; /* Aligns items to the left (horizontally) */
   align-items: flex-start;     /* Aligns items to the top (vertically) */
+  gap: 25px;                  /* Consistent spacing whether side-by-side or stacked */
   margin: 20px 0;
 }
 
@@ -1150,14 +1151,14 @@ pre {
   width: 40%;                /* Makes the image responsive */
   max-width: 380px;          /* Sets a maximum width */
   height: auto;              /* Preserve aspect ratio (no cropping) */
-  margin: 20px 0;
+  margin: 0;
 }
 
 .figure-text {
   flex: 1;                   /* Take the remaining space next to the image */
   min-width: 0;              /* Allow text to shrink instead of overflowing */
   max-width: 100%;           /* Limits the width of the text area */
-  margin: 0 0 0 20px;
+  margin: 0;                 /* Spacing handled by the parent's gap */
 }
 
 /* On small screens, stack the photo on top of the text and center it */
@@ -1170,11 +1171,10 @@ pre {
   .personal-image img {
     width: 60%;
     max-width: 250px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
   }
 
   .figure-text {
-    margin: 0;
     width: 100%;
   }
 }
